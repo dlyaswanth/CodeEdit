@@ -1,7 +1,8 @@
+/* for full view */
 body,html{
-  height:100%;
-  margin:0;
+  background-image:linear-gradient(to right, #1A1A1D , #C3073F) !important;
 }
+/* navbar */
 .sidenav {
   height: 100%;
   width: 0;
@@ -14,11 +15,13 @@ body,html{
   transition: 0.5s;
   padding-top: 60px;
 }
+/* h3 tag format*/
 h3{
   color:grey;
   font-size: 3em;
   margin-left: 15%;
 }
+/* navbar */
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -27,6 +30,7 @@ h3{
   display: block;
   transition: 0.3s;
 }
+/* button */
 .bt1{
   background-color: #C3073F; /* Green */
   border: none;
@@ -37,38 +41,23 @@ h3{
   font-size: 16px !important;
   cursor: pointer;
 }
+/* navbar hover */
 .sidenav a:hover {
   color: white;
 }
+/* full body view in components*/
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-/*#home{
-  margin:0% !important;
-  padding: 0% !important;
-  background-color: lightblue !important;;
-}*/
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
+/* navbar link codeedit*/
 .yas{
   font-size:20px !important;
   color:white !important;
 }
+/* over write for small screen navbar */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-button{
-  color:black;
-  background-color: black;
-}
+/* float options */
 .left,.right {
   height: 100%;
   width: 50%;
@@ -78,46 +67,45 @@ button{
   overflow-x: hidden;
   padding-top: 20px;
 }
+/* float options */
 .left{
   left: 0;
   margin-left:15%;
   margin-top: 10%;
 }
+/* float options */
 .right {
   right: 0;
   margin-right: 2%;
   margin-top: 10%;
-
 }
-.navbar navbar-inverse{
-  display: inline;
-  height: 20px;
-  background-color:  #C3073F !important;
-  border:none !important;
-}
+/* navbar */
 .nav navbar-nav navbar-right{
   background-color:  #C3073F !important;
   border:none !important;
   pointer-events: none;
 }
+/* navbar background color*/
 nav{
  background-image:linear-gradient(to right, #1A1A1D , #C3073F) !important;
 }
+/* span formatting */
 span{
   font-size: large !important;
   color:white !important;
   text-decoration: none !important;
-
 }
+/* h1 formatting */
 h1{
   color:white;
   font-size: 5em;
 }
+/* h2 formatting */
 h2{
   color:lightgrey;
   font-size: 2em;
 }
-
+/* button */
 button {
   background-color: #C3073F; /* Green */
   border: none;
@@ -132,106 +120,135 @@ button {
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
-
+/* button styling home page*/
 .button:hover{
   box-shadow: 10px 12px 8px black;
   background-color: #C3073F
 }
-
+/* button styling home page*/
 .button:focus{
   box-shadow: 10px 12px 8px  black !important;
   background-color: #C3073F
 }
+/* i tag*/
 i{
   font-size: 2em;
 }
+/* span */
 .span1{
   font-size: 2em !important;
 }
+/* span formatting */
 span:hover{
   color:grey !important;
   text-decoration-line: none !important;
-
 }
+.fullscreen{
+  margin :0% !important;
+  padding: 0% !important;
+  min-width: 100% !important;
+  min-height: 100 !important;
+}
+/* Link  */
 Link:hover{
   text-decoration: none !important;
 }
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 20%;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.about{
-  background-color: black !important ;
-}
-.container {
-  padding: 2px 16px;
-}
+/*h4 format*/
 h4{
   color:white !important;
   margin-left: 10%;
 }
-body {
-  margin: 0px;
-}
+
+/*html ,css, js editor styling */
 .Resizer {
   z-index: 10000;
   box-sizing: content-box;
   background-clip: content-box;
 }
-
 .Resizer:hover {
   transition: all 2s ease;
   border: 10px solid black;
 }
-
-.Resizer.horizontal {
-  
+.Resizer.horizontal { 
   margin: -5px 0;
   cursor: row-resize;
   width: 100%;
   border: 8px solid  black;
 }
-
 .Resizer.vertical {
   margin: 0 -5px;
-  
   cursor: col-resize;
   border: 8px solid  black;
 }
-
 .Resizer.disabled {
   cursor: not-allowed;
 }
 .Resizer.disabled:hover {
   border-color: transparent;
 }
+/*Editor style*/
 .ace_editor, .ace_editor div{
   font-family:monospace;
-  color:white !important;
+}
+.ace_library {
+  color: rgb(6, 150, 14) !important;
+}
+.ace_tag{
+  color:hsl(200,100%,50%)  !important;
+}
+.ace_numeric {
+  color:#40c4ff  !important;
+}
+.ace_class{
+  color: #00acc1 !important;
+}
+.ace_type{
+  color: #00acc1 !important;
+}
+.ace_meta{
+  color: hsl(200,100%,50%)  !important
+}
+.ace_bracket{
+  color:red !important;
+}
+.ace_text{
+  color: white !important;
+}
+.ace_variable{
+  color:#00acc1 !important
+}
+.ace_string {
+  color: red  !important;
+}
+.ace_comment {
+  color: grey !important;
+}
+.ace_keyword{
+  color:red !important;
+}
+/*,:+-*/
+.ace_operator {
+  color:  hsl(200,100%,50%) !important;
+}
+.ace_support{
+  color:  #76ff03 !important;;
+}
+.ace_function {
+  color:#76ff03  !important;
+}
+.ace_buildin {
+  color: #76ff03  !important;
+}
+.ace_id{
+  color: red !important;
+}
+.ace_keyword {
+  color:  hsl(200,100%,50%) !important;
 }
 .Text{
   width:40% !important;
   height:100% !important;
 }
-body{
-  background-image:linear-gradient(to right, #1A1A1D , #C3073F) !important;
-}
-.top-pane {
-  color: hsl(200,100%,50%);
-}
-
-.pane-container {
-  display: flex;
-}
-.pane {
-  width: 50%;
-}
-
 @media screen and (min-width: 900px) {
   .pane {
     width: 40%;
@@ -246,8 +263,6 @@ body{
   padding: 0.4rem;
   background-color: hsl(225, 10%, 10%);
 }
-
-/* header pannel color */
 .editor-title {
   display: flex;
   justify-content: center;
@@ -257,15 +272,51 @@ body{
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
 }
-/* editor border */
-.code-mirror-wrapper {
-  flex-grow: 1;
-  border-bottom-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-  overflow: hidden;
-  height: 30vh;
+/* Add shadows to create the "card" effect */
+.card {
+  margin-top: 3% !important;
+  width:100% !important;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: lightgrey !important;
+}
+.card1{
+  width:320px !important;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.codeMirror {
-  height: 100% !important;
+/* Add some padding inside the card container */
+.about{
+  position: absolute !important ;
+  Height:100% !important; 
+  Width:100% !important;
+  background-color:white !important;
+}
+.notes{
+  position:absolute !important ;
+  min-Height:100% !important; 
+  min-Width:100% !important;
+  background-color:white !important;
+}
+.team{
+  margin-left: 25%;
+  color:black !important;
+  font-size: 4em !important;
+}
+.col-container {
+  overflow:hidden;
+  display: flex;
+  width:100% !important;
+  margin:0% !important;
+  padding: 0% !important;
+  vertical-align:top !important;
+}
+.col {
+  flex: 1;
+  display: flex;
+  padding: 16px;
+  vertical-align:top !important;
 }

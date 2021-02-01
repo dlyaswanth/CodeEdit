@@ -18,9 +18,10 @@ function Navbar() {
                 <Link exact to="/"><span style={{alignContent:"center",marginLeft:"15%",}}>CodeEdit</span></Link>
                 <ul className="nav navbar-nav navbar-right" style={{flexDirection:"row",marginTop:"1%",marginRight:"2%"}}>
                    <li><Link to="/about"><span>About Us</span></Link></li>
-                   <li><a href="mailto:webmaster@example.com"><span>Contact Us</span></a></li>
+                   <li><a href="mailto:onlinecodeedit@gmail.com"><span>Contact Us</span></a></li>
                 </ul>
             <div id="mySidenav" className="sidenav" style={{float:'left'}}>
+                <Link  className="closebtn" onClick={closeNav} style={{fontSize:"2em",marginLeft:"130px"}}>&times;</Link>
                 <Link to="/coding" onClick={closeNav}>Start Coding</Link>
                 <Link to="/" onClick={closeNav}>Words Count</Link>
                 <Link to="/notes" onClick={closeNav}>Notes</Link>
