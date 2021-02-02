@@ -318,5 +318,6 @@ h4{
   flex: 1;
   display: flex;
   padding: 16px;
+  width:100% !important;
   vertical-align:top !important;
 }

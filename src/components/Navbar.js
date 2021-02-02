@@ -4,7 +4,7 @@ function Navbar() {
     function openNav() {
         document.getElementsByClassName("sidenav")[0].style.display = "block";
         document.getElementsByClassName("sidenav")[0].style.width = "220px";
-        document.getElementById("home").style.marginLeft = "220px";
+        document.getElementById("home").style.marginLeft = "120px";
     }
       function closeNav() {
         document.getElementsByClassName("sidenav")[0].style.width = "0px";
@@ -23,7 +23,7 @@ function Navbar() {
             <div id="mySidenav" className="sidenav" style={{float:'left'}}>
                 <Link  className="closebtn" onClick={closeNav} style={{fontSize:"2em",marginLeft:"130px"}}>&times;</Link>
                 <Link to="/coding" onClick={closeNav}>Start Coding</Link>
-                <Link to="/" onClick={closeNav}>Words Count</Link>
+                <Link to="/wordscount" onClick={closeNav}>Words Count</Link>
                 <Link to="/notes" onClick={closeNav}>Notes</Link>
             </div>
         </nav>
