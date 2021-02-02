@@ -22,7 +22,8 @@ function Navbar() {
                 </ul>
             <div id="mySidenav" className="sidenav" style={{float:'left'}}>
                 <Link  className="closebtn" onClick={closeNav} style={{fontSize:"2em",marginLeft:"130px"}}>&times;</Link>
-                <Link to="/coding" onClick={closeNav}>Start Coding</Link>
+                <Link to="/coding" onClick={closeNav}>Start HTML</Link>
+                <Link to="/editor" onClick={closeNav}>Start Coding</Link>
                 <Link to="/wordscount" onClick={closeNav}>Words Count</Link>
                 <Link to="/notes" onClick={closeNav}>Notes</Link>
             </div>

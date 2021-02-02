@@ -1,13 +1,30 @@
 import React from "react";
 import AceEditor from "react-ace";
+import 'brace/mode/text'
 import 'brace/mode/javascript'
 import 'brace/mode/html'
 import 'brace/mode/css'
+import 'brace/mode/c_cpp'
+import 'brace/mode/python'
+import 'brace/mode/r'
+import 'brace/mode/ruby'
+import 'brace/mode/java'
+import 'brace/mode/sql'
+import 'brace/mode/php'
+import 'brace/mode/pascal'
+import 'brace/mode/perl'
+import 'brace/mode/swift'
+import 'brace/mode/csharp'
+import 'brace/mode/rust'
+import 'brace/mode/fortran'
 import 'brace/theme/monokai'
 import styles from "./Editors.module.css";
+export const CodeEditor =(props)=>{
+  return <Editor theme={"monokai"} {...props} />;
+};
 export const TextEditor=(props)=>{
     return <Editor mode="text" title={"Notes"} theme={"monokai"} {...props} />;
-}
+};
 export const JavascriptEditor = (props) => {
   return <Editor mode="javascript" theme="monokai" title={"JS"}  {...props} />;
 };

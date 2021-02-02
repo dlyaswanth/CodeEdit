@@ -12,8 +12,8 @@ function WordsCount(){
                 /></div>
                 <div className="cards">
                     <div className="container">
-                        <h2 style={{color:"black"}}>Number of Characters:  {code.length}</h2>
-                        <h2  style={{color:"black"}}>Number of Words: {code.split(" ").length-1}</h2>
+                        <h2 style={{color:"black"}}>Number of Characters:  {code.trim().length}</h2>
+                        <h2  style={{color:"black"}}>Number of Words: {code.length===0?0:code.trim().split(" ").length}</h2>
                     </div>
                 </div>
             </div>
