@@ -1,9 +1,9 @@
 # npm dependencies 
-  npm install react
-  npm install react-dom
-  npm install react-ace
-  npm install react-split-pane
-  npm install brace
+  npm install react                                                                                                            
+  npm install react-dom                                                                                                                      
+  npm install react-ace                                                                                                 
+  npm install react-split-pane                                                                                                                
+  npm install brace                                                                                                           
 ## Available Scripts
 
 To run this project: 
